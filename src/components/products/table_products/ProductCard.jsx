@@ -8,6 +8,8 @@ function AllProducts({products}) {
     <Card css={{ backgroundColor: "#283747" }}>
       <Card.Body>
         <Table
+          headerLined
+          shadow={false}
           aria-label="Example table with static content"
           css={{
             height: "auto",
@@ -17,17 +19,20 @@ function AllProducts({products}) {
           <Table.Header>
             <Table.Column></Table.Column>
             <Table.Column css={{
-              fontSize: '34px'
+              fontSize: '30px',
+              color: '$accents3'
             }}>
               Code
             </Table.Column>
             <Table.Column css={{
-              fontSize: '34px'
+              fontSize: '30px',
+              color: '$accents3'
             }}>
               Name
             </Table.Column>
             <Table.Column css={{
-              fontSize: '34px'
+              fontSize: '30px',
+              color: '$accents3'
             }}>
               Stock
             </Table.Column>
