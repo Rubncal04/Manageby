@@ -1,6 +1,6 @@
 import { Table } from '@nextui-org/react';
 import { Card } from '@nextui-org/react';
-import { NewProductButton } from './NewProductButton';
+import { NewProductButton } from '../../services/NewProductButton';
 
 
 function AllProducts({products}) {
@@ -68,7 +68,7 @@ function AllProducts({products}) {
         </Table>
       </Card.Body>
       <Card.Footer>
-        <NewProductButton/>
+        <NewProductButton textButton='Add product' linkTo='/new-product'/>
       </Card.Footer>
     </Card>
   );
